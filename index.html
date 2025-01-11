@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heads&Tails</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="heads-tails">
+            <button onclick="playerMove('Heads')" class="element">Heads</button>
+            <button onclick="playerMove('Tails')" class="element">Tails</button>
+        </div>
+        
+        <div class="win-details">
+            <p class="win-lose"></p>
+            <p class="move"></p>
+            <p class="js-score"></p>
+        </div>
+        
+        <button class="reset" onclick="
+        resetScore()
+        updateScore()
+        ">Reset score</button>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
